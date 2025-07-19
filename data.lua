@@ -11,3 +11,5 @@ data.raw["character"]["character"].mining_speed=settings.startup["miningSpeed"].
 data.raw["character"]["character"].reach_distance=settings.startup["playerReach"].value
 data.raw["character"]["character"].reach_resource_distance=settings.startup["playerReach"].value
 data.raw['character']['character'].respawn_time=1
+
+require("prototypes.entities")

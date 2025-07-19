@@ -38,3 +38,21 @@ data:extend({
         type = "bool-setting",
     }
 })
+
+local minitrains_before_green_science = {
+    type = "bool-setting",
+    name = "minitrains_before_green_science",
+    setting_type = "startup",
+    default_value = false
+}
+
+data:extend({minitrains_before_green_science})
+
+local minitrains_more_fuel_slots = {
+    type = "bool-setting",
+    name = "minitrains_more_fuel_slots",
+    setting_type = "startup",
+    default_value = false
+}
+
+data:extend({minitrains_more_fuel_slots})
