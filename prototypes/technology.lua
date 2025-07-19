@@ -5,37 +5,22 @@ train_stop_research.prerequisites = { "mini-trains" }
 
 local train_signal_research = data.raw["technology"]["rail-signals"]
 
-if settings.startup["minitrains_before_green_science"].value == true then
-    mini_trains_technology.prerequisites = { "logistics", "steel-processing" }
-    mini_trains_technology.unit =
+mini_trains_technology.prerequisites = { "logistics", "steel-processing" }
+mini_trains_technology.unit =
+{
+    count = 100,
+    ingredients =
     {
-        count = 200,
-        ingredients =
-        {
-            { "automation-science-pack", 1 },
-        },
-        time = 30
-    }
-    train_stop_research.unit.ingredients = { { "automation-science-pack", 1 } }
---    train_signal_research.unit.ingredients = { { "automation-science-pack", 1 } }
-else 
-
-    mini_trains_technology.prerequisites = { "py-science-pack-mk01" }
-    mini_trains_technology.unit =
-    {
-        count = 120,
-        ingredients = { { "automation-science-pack", 2 }, { "py-science-pack-1", 1 } },
-        time = 45
-    }
-    train_stop_research.unit.ingredients = { { "automation-science-pack", 2 }, { "py-science-pack-1", 1 } }
---    train_signal_research.unit.ingredients = { { "automation-science-pack", 2 }, { "py-science-pack-1", 1 } }
-end
-
+        { "automation-science-pack", 1 },
+    },
+    time = 30
+}
+train_stop_research.unit.ingredients = { { "automation-science-pack", 1 } }
 mini_trains_technology.effects =
 {
     {
         type = "unlock-recipe",
-        recipe = "rail"
+        recipe = "early_rails"
     },
     {
         type = "unlock-recipe",
@@ -54,8 +39,24 @@ mini_trains_technology.effects =
 -- make regular trains research locked by mini trains and delete rails from research as it was already unlocked in mini trains
 local railway_research = data.raw["technology"]["railway"]
 table.insert(railway_research.prerequisites, "mini-trains")
-for k, v in pairs(railway_research.effects) do
-    if v.type == "unlock-recipe" and v.recipe == "rail" then
-        table.remove(railway_research.effects, k)
-    end
-end
+
+
+data:extend({
+    {
+
+      type = "technology",
+      name = "elevated-rail",
+      icon = "__elevated-rails__/graphics/technology/elevated-rail.png",
+      icon_size = 256,
+      prerequisites = {"mini-trains"},
+      unit = {
+        count = 83,
+        ingredients = {
+          {"automation-science-pack", 2},
+          {"py-science-pack-1", 1}
+        },
+        time = 37
+      },
+      enabled = true,
+      hidden = false
+}})

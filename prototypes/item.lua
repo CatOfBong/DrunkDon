@@ -1,0 +1,1 @@
+local mini_train = data.raw[]

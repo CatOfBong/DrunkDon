@@ -18,11 +18,11 @@ dependencies.append("autobuild")
 # Создаем структуру для info.json
 info_data = {
     "name": "DrunkDon",
-    "version": "1.0.2",
+    "version": "1.0.4",
     "title": "Пьяный Дон",
     "author": "ТО \"Артхаус\"",
     "homepage": "https://discord.gg/fcwYwNsRRA",
-    "description": "No Penis - No Life!",
+    "description": "No Pinus - No Life!",
     "factorio_version": "2.0",
     "dependencies": dependencies
 }
