@@ -105,3 +105,30 @@ data.raw.recipe["fluid-tank-5x5"].subgroup = "recipe-py-storage-tanks"
 
 data.raw.item["storage-tank"].hidden = true
 data.raw.recipe["storage-tank"].hidden = true
+
+data.raw.item["red-color-coded-storage-tank"].hidden = true
+data.raw.recipe["red-color-coded-storage-tank"].hidden = true
+
+data.raw.item["orange-color-coded-storage-tank"].hidden = true
+data.raw.recipe["orange-color-coded-storage-tank"].hidden = true
+
+data.raw.item["yellow-color-coded-storage-tank"].hidden = true
+data.raw.recipe["yellow-color-coded-storage-tank"].hidden = true
+
+data.raw.item["green-color-coded-storage-tank"].hidden = true
+data.raw.recipe["green-color-coded-storage-tank"].hidden = true
+
+data.raw.item["blue-color-coded-storage-tank"].hidden = true
+data.raw.recipe["blue-color-coded-storage-tank"].hidden = true
+
+data.raw.item["purple-color-coded-storage-tank"].hidden = true
+data.raw.recipe["purple-color-coded-storage-tank"].hidden = true
+
+data.raw.item["pink-color-coded-storage-tank"].hidden = true
+data.raw.recipe["pink-color-coded-storage-tank"].hidden = true
+
+data.raw.item["black-color-coded-storage-tank"].hidden = true
+data.raw.recipe["black-color-coded-storage-tank"].hidden = true
+
+data.raw.item["white-color-coded-storage-tank"].hidden = true
+data.raw.recipe["white-color-coded-storage-tank"].hidden = true
