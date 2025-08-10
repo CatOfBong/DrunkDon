@@ -1,0 +1,356 @@
+
+{
+  "mods": 
+  [
+    
+    {
+      "name": "base",
+      "enabled": true
+    },
+    
+    {
+      "name": "elevated-rails",
+      "enabled": true
+    },
+    
+    {
+      "name": "quality",
+      "enabled": true
+    },
+    
+    {
+      "name": "space-age",
+      "enabled": false
+    },
+    
+    {
+      "name": "aai-loaders",
+      "enabled": true
+    },
+    
+    {
+      "name": "autobuild",
+      "enabled": true
+    },
+    
+    {
+      "name": "AutoDeconstruct",
+      "enabled": true
+    },
+    
+    {
+      "name": "belt-visualizer",
+      "enabled": true
+    },
+    
+    {
+      "name": "BottleneckLite",
+      "enabled": true
+    },
+    
+    {
+      "name": "ccp-noooo",
+      "enabled": true
+    },
+    
+    {
+      "name": "chest-auto-sort",
+      "enabled": true
+    },
+    
+    {
+      "name": "color_whole_train",
+      "enabled": true
+    },
+    
+    {
+      "name": "cybersyn",
+      "enabled": true
+    },
+    
+    {
+      "name": "cybersyn-combinator",
+      "enabled": true
+    },
+    
+    {
+      "name": "cybersyn_by_morality",
+      "enabled": true
+    },
+    
+    {
+      "name": "deadlock-beltboxes-loaders",
+      "enabled": true
+    },
+    
+    {
+      "name": "DeadlocksStackingForPyanadon",
+      "enabled": true
+    },
+    
+    {
+      "name": "DrunkDon",
+      "enabled": true
+    },
+    
+    {
+      "name": "EditorExtensions",
+      "enabled": true
+    },
+    
+    {
+      "name": "elevated-pipes",
+      "enabled": true
+    },
+    
+    {
+      "name": "elevated-rails-recolor",
+      "enabled": true
+    },
+    
+    {
+      "name": "enable-all-feature-flags",
+      "enabled": true
+    },
+    
+    {
+      "name": "EvenDistributionLite",
+      "enabled": true
+    },
+    
+    {
+      "name": "FactorySearch",
+      "enabled": true
+    },
+    
+    {
+      "name": "flib",
+      "enabled": true
+    },
+    
+    {
+      "name": "FluidWagonColorMask",
+      "enabled": true
+    },
+    
+    {
+      "name": "ghost-counter",
+      "enabled": true
+    },
+    
+    {
+      "name": "GUI_Unifyer",
+      "enabled": true
+    },
+    
+    {
+      "name": "lane-filtered-loaders",
+      "enabled": true
+    },
+    
+    {
+      "name": "Milestones",
+      "enabled": true
+    },
+    
+    {
+      "name": "minimalist-rails",
+      "enabled": true
+    },
+    
+    {
+      "name": "Mini_Trains",
+      "enabled": true
+    },
+    
+    {
+      "name": "naked-rails-f2",
+      "enabled": true
+    },
+    
+    {
+      "name": "not-enough-parameters",
+      "enabled": true
+    },
+    
+    {
+      "name": "pipe-visualization-overlay",
+      "enabled": true
+    },
+    
+    {
+      "name": "pyalienlife",
+      "enabled": true
+    },
+    
+    {
+      "name": "pyalienlifegraphics",
+      "enabled": true
+    },
+    
+    {
+      "name": "pyalienlifegraphics2",
+      "enabled": true
+    },
+    
+    {
+      "name": "pyalienlifegraphics3",
+      "enabled": true
+    },
+    
+    {
+      "name": "pyalternativeenergy",
+      "enabled": true
+    },
+    
+    {
+      "name": "pyalternativeenergygraphics",
+      "enabled": true
+    },
+    
+    {
+      "name": "pycoalprocessing",
+      "enabled": true
+    },
+    
+    {
+      "name": "pycoalprocessinggraphics",
+      "enabled": true
+    },
+    
+    {
+      "name": "pyfusionenergy",
+      "enabled": true
+    },
+    
+    {
+      "name": "pyfusionenergygraphics",
+      "enabled": true
+    },
+    
+    {
+      "name": "pyhightech",
+      "enabled": true
+    },
+    
+    {
+      "name": "pyhightechgraphics",
+      "enabled": true
+    },
+    
+    {
+      "name": "pyindustry",
+      "enabled": true
+    },
+    
+    {
+      "name": "pyindustrygraphics",
+      "enabled": true
+    },
+    
+    {
+      "name": "pypetroleumhandling",
+      "enabled": true
+    },
+    
+    {
+      "name": "pypetroleumhandlinggraphics",
+      "enabled": true
+    },
+    
+    {
+      "name": "pypostprocessing",
+      "enabled": true
+    },
+    
+    {
+      "name": "pyrawores",
+      "enabled": true
+    },
+    
+    {
+      "name": "pyraworesgraphics",
+      "enabled": true
+    },
+    
+    {
+      "name": "RateCalculator",
+      "enabled": true
+    },
+    
+    {
+      "name": "rebuild-crash-site",
+      "enabled": true
+    },
+    
+    {
+      "name": "RecipeBook",
+      "enabled": true
+    },
+    
+    {
+      "name": "stacking-loaders",
+      "enabled": true
+    },
+    
+    {
+      "name": "StatsGui",
+      "enabled": true
+    },
+    
+    {
+      "name": "Tapeline",
+      "enabled": true
+    },
+    
+    {
+      "name": "TaskList",
+      "enabled": true
+    },
+    
+    {
+      "name": "the-one-mod-with-underground-bits",
+      "enabled": true
+    },
+    
+    {
+      "name": "transparent-elevated-rails",
+      "enabled": true
+    },
+    
+    {
+      "name": "UltimateResearchQueue2",
+      "enabled": true
+    },
+    
+    {
+      "name": "UndergroundIndicatorsFixed",
+      "enabled": true
+    },
+    
+    {
+      "name": "vibrant-train-colors",
+      "enabled": true
+    },
+    
+    {
+      "name": "what-items-do-i-have",
+      "enabled": true
+    },
+    
+    {
+      "name": "WideChests",
+      "enabled": true
+    },
+    
+    {
+      "name": "WideChestsLogistic",
+      "enabled": true
+    },
+    
+    {
+      "name": "zithorian-extra-storage-tanks-port",
+      "enabled": true
+    }
+  ]
+}
