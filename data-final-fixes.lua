@@ -58,6 +58,13 @@ data.raw.item["mini-cargo-wagon"].order = "a-2[trains]"
 data.raw.item["mini-fluid-wagon"].order = "a-3[trains]"
 
 
+data.raw.recipe["early_rails"].subgroup = "recipe-train-transport"
+
+data.raw.recipe["early_rails"]["item-group"] = "logistics"
+
+data.raw.recipe["early_rails"].order = "a-a"
+
+
 -- Установка порядка для всех баков в соответствии с новой иерархией
 data.raw.item["fluid-tank-1x1"].order = "a-01[tanks]"
 data.raw.item["py-tank-3000"].order = "a-02[tanks]"
@@ -132,3 +139,45 @@ data.raw.recipe["black-color-coded-storage-tank"].hidden = true
 
 data.raw.item["white-color-coded-storage-tank"].hidden = true
 data.raw.recipe["white-color-coded-storage-tank"].hidden = true
+
+
+local range = settings.startup['sup_length'].value or 500
+
+for _, sub_type in pairs({'rail-ramp', 'rail-support'}) do
+  for _, prototype in pairs(data.raw[sub_type]) do
+    prototype.support_range = range
+  end
+end
+
+
+-- Вставьте этот код в один из ваших lua-файлов (например, data.lua или data-updates.lua)
+local function set_stack_size_to_1600()
+    -- Список категорий объектов для изменения
+    local categories = {
+        'transport-belt',
+        'underground-belt',
+        'splitter',
+        'inserter',
+        'pipe',
+        'pipe-to-ground',
+    }
+
+    -- Проходим по всем категориям
+    for _, category in ipairs(categories) do
+        -- Проверяем существование категории в данных
+        if data.raw[category] then
+            -- Для каждого объекта в категории
+            for _, entity in pairs(data.raw[category]) do
+                -- Находим соответствующий предмет
+                local item = data.raw.item[entity.name]
+                if item then
+                    -- Устанавливаем новый размер стака
+                    item.stack_size = 1600
+                end
+            end
+        end
+    end
+end
+
+-- Вызываем функцию
+set_stack_size_to_1600()

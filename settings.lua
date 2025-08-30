@@ -37,4 +37,13 @@ data:extend({
         setting_type = "startup",
         type = "bool-setting",
     },
+    {
+		name = 'sup_length',
+		type = 'int-setting',
+		setting_type = 'startup',
+        order = 'a',
+		default_value = 500,
+		minimum_value = 4,
+		maximum_value = 500,
+	},
 })

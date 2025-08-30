@@ -1,6 +1,6 @@
 {
     "name": "DrunkDon",
-    "version": "1.0.7",
+    "version": "1.0.9",
     "title": "Пьяный Дон",
     "author": "ТО \"Артхаус\"",
     "homepage": "https://discord.gg/fcwYwNsRRA",
@@ -58,6 +58,7 @@
         "pyrawores",
         "pyraworesgraphics",
         "quality",
+        "railway-reach",
         "RateCalculator",
         "rebuild-crash-site",
         "stacking-loaders",
