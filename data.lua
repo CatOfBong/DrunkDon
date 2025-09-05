@@ -13,3 +13,12 @@ data.raw["character"]["character"].reach_resource_distance=settings.startup["pla
 data.raw['character']['character'].respawn_time=1
 
 require("prototypes.entities")
+
+data:extend({
+  {
+    type = "item-subgroup",
+    name = "recipe-py-storage-tanks",
+    group = "logistics",
+    order = "zz-ad"
+  }
+})
