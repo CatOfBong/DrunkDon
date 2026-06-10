@@ -275,3 +275,18 @@ for i, color_data in pairs(colors) do
 end
 
 TILE("refined-concrete"):set_fields(refined_properties)
+
+
+function double_wire_distance()
+    for type_name, prototypes in pairs(data.raw) do
+        for _, prototype in pairs(prototypes) do
+            if prototype.maximum_wire_distance and prototype.maximum_wire_distance*2 < 64 then
+                prototype.maximum_wire_distance = prototype.maximum_wire_distance * 2
+            end
+            if prototype.maximum_wire_distance and prototype.maximum_wire_distance*2 >= 64 then
+                prototype.maximum_wire_distance = 64
+            end
+        end
+    end
+end
+double_wire_distance()

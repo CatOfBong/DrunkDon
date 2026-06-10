@@ -1,3 +1,4 @@
+local sounds = require("__base__.prototypes.entity.sounds")
 for _,tree in pairs(data.raw["tree"]) do
 	tree.collision_box={{-0.05,-0.05},{0.05,0.05}}
 end
@@ -13,6 +14,8 @@ data.raw["character"]["character"].reach_resource_distance=settings.startup["pla
 data.raw['character']['character'].respawn_time=1
 
 require("prototypes.entities")
+
+require("prototypes.item")
 
 data:extend({
   {

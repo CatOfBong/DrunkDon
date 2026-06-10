@@ -18,7 +18,7 @@ dependencies.append("autobuild")
 # Создаем структуру для info.json
 info_data = {
     "name": "DrunkDon",
-    "version": "1.0.6",
+    "version": "1.0.14",
     "title": "Пьяный Дон",
     "author": "ТО \"Артхаус\"",
     "homepage": "https://discord.gg/fcwYwNsRRA",

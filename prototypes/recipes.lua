@@ -75,6 +75,14 @@ RECIPE("mini-fluid-wagon"):add_ingredient { type = "item", name = "duralumin", a
     :add_ingredient { type = "item", name = "py-tank-1000", amount = 1 }
 
 
+data:extend({
+    {
+      type = "recipe-category",
+      name = "brewering"
+    }
+})
+
+data.raw["assembling-machine"]["cloning-vat"].crafting_categories = {"brewering"}
 
 
 local early_rails = {
@@ -116,6 +124,25 @@ local rail_minimal = {
     auto_recycle = false
 }
 data:extend({ rail_minimal })
+
+local beer = {
+    type = "recipe",
+    category = "brewering",
+    name = "beer-01",
+    enabled = true,
+    energy_required = 90,
+    ingredients =
+    {
+        { type = "item",  name = "moondrop", amount = 4 },
+        { type = "item",  name = "moss",     amount = 5 },
+        { type = "item",  name = "native-flora",     amount = 10 },
+        { type = "fluid", name = "gasoline",     amount = 10 },
+        { type = "fluid", name = "water",     amount = 100 }
+    },
+    results = { { type = "item", name = "beer-01", amount = 1 } },
+    auto_recycle = false
+}
+data:extend({ beer })
 
 
 -- Железный уровень (5000)
